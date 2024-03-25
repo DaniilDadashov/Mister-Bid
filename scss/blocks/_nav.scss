@@ -1,0 +1,24 @@
+.nav {
+    display: flex;
+    gap: 120px;
+    font-weight: 600;
+
+    @include mediaLaptop {
+        gap: 70px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 70px;
+        color: $dark-blue;
+
+        @include mediaLaptop {
+            gap: 40px;
+        }
+    }
+
+    &__login {
+        display: flex;
+        gap: 25px;
+    }
+}

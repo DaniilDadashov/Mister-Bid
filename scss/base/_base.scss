@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@400;600;800&display=swap');
+
+body {
+    font-family: $font;
+    font-size: 16px;
+    color: $dark-blue;
+}
+.container {
+    max-width: 1240px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+a {
+    color: $dark-blue;
+    
+    &:hover{
+        color: $hover;
+        transition: color .2s ease-in;
+    }
+}
+.title-2 {
+    font-size: 35px;
+    font-weight: 800;
+    color: $dark-blue;
+}
+.none {
+    display: none !important;
+}
+.visually-hidden {
+    height: 1px;
+    overflow: hidden;
+    width: 1px;
+    position: absolute;
+
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+
+    white-space: nowrap;
+}

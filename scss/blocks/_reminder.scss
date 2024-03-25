@@ -1,0 +1,40 @@
+.reminder__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 35px 40px;
+    background-color: #41BADC;
+    
+    &::before {
+        content: url(../img/reminder-bg.png);
+        position: absolute;
+        right: 0;
+        transform: rotate(46.5deg);
+        mix-blend-mode: color-dodge;
+    }
+}
+.reminder__text {
+    color: $white;
+    font-size: 30px;
+    font-weight: 800;
+}
+.reminder__btn {
+    background-color: $accent;
+    color: $white;
+    font-family: $font;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 12px 31px;
+    border-radius: 7px;
+    transition: all .2s ease-in;
+    z-index: 1;
+    white-space: nowrap;
+    
+    &:hover {
+        background-color: #417adc;
+    }
+}

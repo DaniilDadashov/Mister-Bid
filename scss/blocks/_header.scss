@@ -1,0 +1,135 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 520px;
+    padding-top: 9px;
+}
+.header__top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    @include mediaTablet {
+        width: 80%;
+    }
+}
+.header__top-row--mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 50px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .header__nav {
+        display: block;
+    }
+    
+    .nav {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .nav__list {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .header__nav-btn {
+        position: fixed;
+        top: 20px;
+        right: 15px;
+    }
+}
+.header__nav {
+    @include mediaTablet {
+        display: none;
+    }
+}
+.header__nav-btn {
+    display: none;
+
+    @include mediaTablet {
+        display: block;
+    }
+}
+.header__footer {
+    max-height: 446px;
+    margin-top: 7px;
+    overflow: hidden;
+    background: url(../img/header/header-bg-triangles.png) no-repeat left;
+    background-color: $header-bg;
+
+    &-row {
+        padding: 100px 0 130px;
+        background: url(../img/header/car2.png) no-repeat right;
+        background-size: contain;
+        mix-blend-mode: darken;
+
+        @include mediaTablet {
+            padding: 50px 0 65px;
+        }
+
+        @include mediaMobile {
+            background: none;
+        }
+    }
+}
+.header__title {
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 50px;
+
+    span {
+        color: $accent;
+    }
+
+    @include mediaTablet {
+        font-size: 28px;
+    }
+    br {
+        @include mediaMobile-S {
+            display: none;
+        }
+    }
+}
+.header__btn {
+    display: flex;
+    gap: 15px;
+
+    @include mediaMobile-S {
+        flex-direction: column;
+    }
+}
+.btn-profit,
+.btn-invest {
+    background-color: $accent;
+    color: $white;
+    font-family: $font;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 7px;
+    transition: all .2s ease-in;
+
+    &:hover {
+        background-color: $hover;
+    }
+}
+.btn-profit {
+    padding: 13px 44px;
+}
+.btn-invest {
+    padding: 13px 33px;
+}

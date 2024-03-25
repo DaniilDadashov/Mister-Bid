@@ -1,0 +1,38 @@
+.stages {
+    padding: 60px 0 80px;
+    text-align: center;
+
+    &__text {
+        margin: 25px auto 65px;
+        max-width: 930px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 154px;
+    }
+
+    &__item-img {
+        background-color: $stage-bg;
+        padding: 20px;
+        border-radius: 6px;
+    }
+
+    &__item-title {
+        font-size: 18px;
+        font-weight: 800;
+        color: $accent;
+        margin: 21px 0 10px;
+    }
+
+    &__dotted {
+        width: 110px;
+        height: 0;
+        border: 1px dashed rgba(67, 94, 190, 0.5);
+        margin-top: 38px;
+    }
+}
