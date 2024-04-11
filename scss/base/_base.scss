@@ -19,9 +19,13 @@ a {
     }
 }
 .title-2 {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 800;
     color: $dark-blue;
+
+    @include mediaMobile {
+        font-size: 24px;
+    }
 }
 .none {
     display: none !important;
