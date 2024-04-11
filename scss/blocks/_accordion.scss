@@ -1,5 +1,5 @@
 .accordion {
-    max-width: 680px;
+    width: 100%;
 
     &__item {
         border-radius: 8px;
@@ -28,6 +28,11 @@
     padding: 25px;
     cursor: pointer;
 
+    @include mediaMobile-S {
+        font-size: 14px;
+        padding: 15px;
+    }
+
     &::after {
         content: '+';
         position: absolute;
@@ -38,7 +43,7 @@
     }
 
     h3 {
-        margin-right: 40px;
+        margin-right: 30px;
     }
 }
 .accordion__item--open .accordion__text{

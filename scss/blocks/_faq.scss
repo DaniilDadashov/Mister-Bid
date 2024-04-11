@@ -4,6 +4,12 @@
     &__row {
         display: flex;
         justify-content: space-between;
+
+        @include mediaTablet {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
     }
     
     &__title {
