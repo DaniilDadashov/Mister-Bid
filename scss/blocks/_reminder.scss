@@ -9,6 +9,12 @@
     padding: 35px 40px;
     background-color: #41BADC;
     
+    @include mediaMobile {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 25px 30px;
+    }
+
     &::before {
         content: url(../img/reminder-bg.png);
         position: absolute;
@@ -20,7 +26,11 @@
 .reminder__text {
     color: $white;
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 600;
+
+    @include mediaMobile {
+        font-size: 24px;
+    }
 }
 .reminder__btn {
     background-color: $accent;

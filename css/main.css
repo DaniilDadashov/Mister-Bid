@@ -438,6 +438,13 @@ a:hover {
   padding: 35px 40px;
   background-color: #41BADC;
 }
+@media screen and (max-width: 760px) {
+  .reminder__row {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 25px 30px;
+  }
+}
 .reminder__row::before {
   content: url(../img/reminder-bg.png);
   position: absolute;
@@ -449,7 +456,12 @@ a:hover {
 .reminder__text {
   color: #FFF;
   font-size: 30px;
-  font-weight: 800;
+  font-weight: 600;
+}
+@media screen and (max-width: 760px) {
+  .reminder__text {
+    font-size: 24px;
+  }
 }
 
 .reminder__btn {
