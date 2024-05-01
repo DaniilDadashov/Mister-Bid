@@ -85,6 +85,10 @@
         @include mediaMobile {
             background: none;
         }
+
+        @include mediaMobile-S {
+            padding: 30px 0 40px;
+        }
     }
 }
 .header__title {
@@ -92,13 +96,17 @@
     font-weight: 800;
     margin-bottom: 50px;
 
+    @include mediaTablet {
+            font-size: 28px;
+        }
+    @include mediaMobile-S {
+        margin-bottom: 30px;
+    }
+
     span {
         color: $accent;
     }
 
-    @include mediaTablet {
-        font-size: 28px;
-    }
     br {
         @include mediaMobile-S {
             display: none;
@@ -108,6 +116,7 @@
 .header__btn {
     display: flex;
     gap: 15px;
+    white-space: nowrap;
 
     @include mediaMobile-S {
         flex-direction: column;

@@ -4,9 +4,17 @@
     text-align: center;
     background: url(../img/footer/footer-bg.png) no-repeat left;
     background-color: $footer-bg;
+
+    @include mediaMobile {
+        padding: 30px 0;
+    }   
 }
 .footer__text {
     margin: 30px 0;
+
+    @include mediaMobile {
+        margin: 20px 0;
+    }    
 }
 .footer__socials-list {
     display: grid;
@@ -14,11 +22,21 @@
     gap: 27px;
     justify-content: center;
 
+    @include mediaMobile {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    @include mediaMobile-S {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
     a {
         display: flex;
         gap: 10px;
         align-items: center;
-    
+        justify-content: center;
         height: 52px;
         padding: 14px 27px;
         border-radius: 7px;
@@ -30,10 +48,18 @@
     
         &:hover {
             transform: scale(1.1);
+
+            @include mediaMobile-S {
+                transform: none;
+            }
         }
     }
 }
 .footer__bottom {
     text-align: center;
     padding: 40px 0;
+
+    @include mediaMobile {
+        padding: 20px 0;
+    }   
 }

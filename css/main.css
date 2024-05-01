@@ -211,19 +211,29 @@ a:hover {
     background: none;
   }
 }
+@media screen and (max-width: 460px) {
+  .header__footer-row {
+    padding: 30px 0 40px;
+  }
+}
 
 .header__title {
   font-size: 35px;
   font-weight: 800;
   margin-bottom: 50px;
 }
-.header__title span {
-  color: #435EBE;
-}
 @media screen and (max-width: 1000px) {
   .header__title {
     font-size: 28px;
   }
+}
+@media screen and (max-width: 460px) {
+  .header__title {
+    margin-bottom: 30px;
+  }
+}
+.header__title span {
+  color: #435EBE;
 }
 @media screen and (max-width: 460px) {
   .header__title br {
@@ -234,6 +244,7 @@ a:hover {
 .header__btn {
   display: flex;
   gap: 15px;
+  white-space: nowrap;
 }
 @media screen and (max-width: 460px) {
   .header__btn {
@@ -352,6 +363,11 @@ a:hover {
   padding: 60px 0 80px;
   text-align: center;
 }
+@media screen and (max-width: 760px) {
+  .stages {
+    padding: 30px 0 40px;
+  }
+}
 .stages__text {
   margin: 25px auto 65px;
   max-width: 930px;
@@ -445,6 +461,11 @@ a:hover {
     padding: 25px 30px;
   }
 }
+@media screen and (max-width: 460px) {
+  .reminder__row {
+    padding: 20px 25px;
+  }
+}
 .reminder__row::before {
   content: url(../img/reminder-bg.png);
   position: absolute;
@@ -461,6 +482,11 @@ a:hover {
 @media screen and (max-width: 760px) {
   .reminder__text {
     font-size: 24px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .reminder__text {
+    font-size: 20px;
   }
 }
 
@@ -482,6 +508,11 @@ a:hover {
 
 .faq {
   padding: 80px 0;
+}
+@media screen and (max-width: 760px) {
+  .faq {
+    padding: 40px 0;
+  }
 }
 .faq__row {
   display: flex;
@@ -576,9 +607,19 @@ a:hover {
   background: url(../img/footer/footer-bg.png) no-repeat left;
   background-color: #F6F7F8;
 }
+@media screen and (max-width: 760px) {
+  .footer__top {
+    padding: 30px 0;
+  }
+}
 
 .footer__text {
   margin: 30px 0;
+}
+@media screen and (max-width: 760px) {
+  .footer__text {
+    margin: 20px 0;
+  }
 }
 
 .footer__socials-list {
@@ -587,10 +628,23 @@ a:hover {
   gap: 27px;
   justify-content: center;
 }
+@media screen and (max-width: 760px) {
+  .footer__socials-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .footer__socials-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
 .footer__socials-list a {
   display: flex;
   gap: 10px;
   align-items: center;
+  justify-content: center;
   height: 52px;
   padding: 14px 27px;
   border-radius: 7px;
@@ -603,8 +657,18 @@ a:hover {
 .footer__socials-list a:hover {
   transform: scale(1.1);
 }
+@media screen and (max-width: 460px) {
+  .footer__socials-list a:hover {
+    transform: none;
+  }
+}
 
 .footer__bottom {
   text-align: center;
   padding: 40px 0;
+}
+@media screen and (max-width: 760px) {
+  .footer__bottom {
+    padding: 20px 0;
+  }
 }/*# sourceMappingURL=main.css.map */
