@@ -481,12 +481,7 @@ a:hover {
 }
 @media screen and (max-width: 760px) {
   .reminder__text {
-    font-size: 24px;
-  }
-}
-@media screen and (max-width: 460px) {
-  .reminder__text {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 

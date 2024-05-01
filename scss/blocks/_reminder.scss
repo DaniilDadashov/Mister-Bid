@@ -32,10 +32,7 @@
     font-weight: 600;
 
     @include mediaMobile {
-        font-size: 24px;
-    }
-    @include mediaMobile-S {
-        font-size: 20px;
+        font-size: 22px;
     }
 }
 .reminder__btn {
